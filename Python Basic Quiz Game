@@ -1,0 +1,36 @@
+Basic Quiz Game devloped in python code 
+
+def quiz():
+    score = 0
+    
+    # Question 1
+    print("Question 1: What is the capital of France?")
+    answer1 = input("a) Paris\nb) Rome\nc) London\nYour answer: ")
+    if answer1.lower() == "a":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect! The correct answer is Paris.")
+    
+    # Question 2
+    print("\nQuestion 2: What is the largest planet in our solar system?")
+    answer2 = input("a) Earth\nb) Jupiter\nc) Mars\nYour answer: ")
+    if answer2.lower() == "b":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect! The correct answer is Jupiter.")
+    
+    # Question 3
+    print("\nQuestion 3: Who wrote 'Romeo and Juliet'?")
+    answer3 = input("a) William Shakespeare\nb) Jane Austen\nc) Charles Dickens\nYour answer: ")
+    if answer3.lower() == "a":
+        print("Correct!")
+        score += 1
+    else:
+        print("Incorrect! The correct answer is William Shakespeare.")
+    
+    print("\nQuiz completed!")
+    print("Your score is", score, "out of 3.")
+
+quiz()
